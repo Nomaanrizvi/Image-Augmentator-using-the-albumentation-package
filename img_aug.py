@@ -75,7 +75,7 @@ for file_name in file_names:
     colorjit_image=np.array(colorjit_transformed_image, dtype=np.uint8)
     gausnoise_image=np.array(gauss_noise_transformed_image, dtype=np.uint8)
 
-
+    #writing images
     cv2.imwrite(r"D:/image/horizontal_flip/" + file_name , hori_flip_image)
     cv2.imwrite(r"D:/image/blur/" + file_name , blur_image)
     cv2.imwrite(r"D:/image/vertical_flip/" + file_name , vert_flip_image)
